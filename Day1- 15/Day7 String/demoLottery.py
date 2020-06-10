@@ -18,10 +18,10 @@ def random_select():
     """
     随机选择一组号码
     """
-    red_balls = [x for x in range(1, 35)]
+    red_balls = [x for x in range(1, 36)]
     selected_balls = []
     selected_balls = sample(red_balls, 7)
-    selected_balls.sort()
+    #selected_balls.sort()
     selected_balls.append(randint(1, 20))
     return selected_balls
 
