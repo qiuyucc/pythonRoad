@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Testing for css</title>
+    <style>
+    /*<!-- css universal Sector -->*/
+        * {
+            text-align:center;
+            color:blue;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+        p.center{
+            /*In this example, only <p> elements with class = 'center' will be center-aligned*/
+        }
+        #para1{
+            /*HTML element with id = para1*/
+            text-align: center;
+            color: red;
+        }
+
+        /*text direction*/
+        p.ex2 {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        h1,h2,p {
+            text-align: center;
+            color: red;
+        }
+
+        div{
+            border: 1px solidd red;
+            margin-left: 100px;
+        }
+
+        p.ex1 {
+            margin-left:inherit;
+        }
+    </style>
+</head>
+<body>
+     <h1 style="color:blue; text-align: center;">This is a heading</h1>
+     <p style="color:red;">This is a paragraph</p>
+
+    <div>
+        <p class="ex1">This paragraph has an inherited left margin (from the div element).</p>
+    </div>
+    <p class="ex2">This is me</p>
+</body>
+</html>
+
+<!--Cascading order
+
+1. Inline style
+2. External and internal style sheets
+3. Browser default
+
+Value defined as Important > Inline >id nesting > id > class nesting > class > tag nesting > tag
+
+-->
