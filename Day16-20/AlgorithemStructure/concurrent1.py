@@ -37,7 +37,7 @@ def main():
                 target=generate_thumbnail,
                 args=(infile, (size, size))
             ).start()
-
+# get some changes
 
 if __name__ == '__main__':
     main()
